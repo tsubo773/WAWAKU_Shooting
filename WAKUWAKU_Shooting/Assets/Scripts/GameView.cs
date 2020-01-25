@@ -12,7 +12,7 @@ public class GameView : MonoBehaviour
 
     void Update()
     {
-        KeyDownCheck();
+        //KeyDownCheck();
     }
 
     /// <summary>
