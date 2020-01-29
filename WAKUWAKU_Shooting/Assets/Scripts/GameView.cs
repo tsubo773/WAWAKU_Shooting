@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class GameView : MonoBehaviour
 {
-<<<<<<< HEAD
     /// <summary> Player1のPrefab </summary>
     [SerializeField] GameObject _player1Prefab;
     /// <summary> Player2のPrefab </summary>
@@ -26,16 +25,10 @@ public class GameView : MonoBehaviour
         PlayerCreate(_player1Prefab);
         PlayerCreate(_player2Prefab);
         StartCoroutine(GameStart());
-=======
-    void Start()
-    {
-        
->>>>>>> parent of d883bae... Merge branch 'develop' into sample_kt
     }
 
     void Update()
     {
-<<<<<<< HEAD
         if (_player1) {
             _gamePlay = false;
             red.SetActive(true);
@@ -76,22 +69,4 @@ public class GameView : MonoBehaviour
         yield return new WaitForSeconds(3f);
         _gamePlay = true;
     }
-=======
-        //KeyDownCheck();
-    }
-
-    /// <summary>
-    /// どのボタンが押されたかをチェックする
-    /// </summary>
-    void KeyDownCheck()
-    {
-        if(Input.anyKeyDown)
-            foreach (KeyCode code in Enum.GetValues(typeof(KeyCode))) {
-            if (Input.GetKeyDown(code)) {
-                Debug.Log(code);
-                break;
-            }
-        }
-    }
->>>>>>> parent of d883bae... Merge branch 'develop' into sample_kt
 }
