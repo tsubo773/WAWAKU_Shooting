@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     /// <summary> 弾の速度 </summary>
     [SerializeField] float _speed = 5;
+<<<<<<< HEAD
     /// <summary> 弾が消える時のパーティクル </summary>
     [SerializeField] GameObject _deathParticlePrefab;
 
@@ -13,10 +14,17 @@ public class Bullet : MonoBehaviour
     {
         gameObject.GetComponent<Rigidbody>().velocity = -transform.forward * _speed;
         transform.Rotate(transform.forward, Random.Range(0, 360f));
+=======
+ 
+    void Start()
+    {
+        gameObject.GetComponent<Rigidbody>().velocity = -transform.forward * _speed;
+>>>>>>> parent of d883bae... Merge branch 'develop' into sample_kt
     }
 
     void Update()
     {
+<<<<<<< HEAD
         Clamp();
     }
 
@@ -47,5 +55,8 @@ public class Bullet : MonoBehaviour
     void Death()
     {
         Destroy(gameObject);
+=======
+        
+>>>>>>> parent of d883bae... Merge branch 'develop' into sample_kt
     }
 }
